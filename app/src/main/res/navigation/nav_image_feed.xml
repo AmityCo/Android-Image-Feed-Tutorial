@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.amity.imagefeed.fragment.LoginFragment"
+        android:label="Login Fragment">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_ImageFeedFragment"
+            app:destination="@id/ImageFeedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ImageFeedFragment"
+        android:name="com.amity.imagefeed.fragment.ImageFeedFragment"
+        android:label="Image Feed Fragment">
+
+        <action
+            android:id="@+id/action_ImageFeedFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <action
+            android:id="@+id/action_ImageFeedFragment_to_CreatePostFragment"
+            app:destination="@id/CreatePostFragment" />
+
+        <action
+            android:id="@+id/action_ImageFeedFragment_to_CommentListFragment"
+            app:destination="@id/CommentListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CreatePostFragment"
+        android:name="com.amity.imagefeed.fragment.CreatePostFragment"
+        android:label="Create Post Fragment">
+
+        <action
+            android:id="@+id/action_CreatePostFragment_to_ImageFeedFragment"
+            app:destination="@id/ImageFeedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CommentListFragment"
+        android:name="com.amity.imagefeed.fragment.CommentListFragment"
+        android:label="Create Post Fragment">
+
+        <action
+            android:id="@+id/action_CreatePostFragment_to_ImageFeedFragment"
+            app:destination="@id/ImageFeedFragment" />
+    </fragment>
+</navigation>

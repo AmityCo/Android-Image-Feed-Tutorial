@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.AmityImageFeed" parent="Base.Theme.AmityImageFeed">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>
