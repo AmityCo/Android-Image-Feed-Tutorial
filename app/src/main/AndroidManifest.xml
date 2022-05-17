@@ -12,6 +12,7 @@
         android:theme="@style/Theme.AmityImageFeed.NoActionBar">
 
         <activity
+            android:windowSoftInputMode="stateHidden|adjustPan"
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>

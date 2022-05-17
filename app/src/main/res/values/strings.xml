@@ -29,6 +29,9 @@
     <string name="amity_post_create_hint">What\'s going on :)</string>
     <string name="amity_attach_image">+ Attach new image</string>
     <string name="amity_create_post">create post</string>
+    <string name="amity_empty_comment">There\'s no comments here</string>
+    <string name="amity_empty_comment_description">Let\'s create your first comment here :D</string>
+    <string name="amity_comment_create">Create</string>
 
 
 </resources>

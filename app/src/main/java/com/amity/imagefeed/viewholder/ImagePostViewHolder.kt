@@ -4,6 +4,7 @@ import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.amity.imagefeed.R
@@ -88,7 +89,8 @@ class ImagePostViewHolder(private val binding: ListItemPostBinding) :
         }
         //navigate to comment list screen when clicking comment textview
         binding.commentCountTextview.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.action_ImageFeedFragment_to_CommentListFragment)
+            val bundle = bundleOf("postId" to post?.getPostId())
+            Navigation.findNavController(binding.root).navigate(R.id.action_ImageFeedFragment_to_CommentListFragment, bundle)
         }
     }
 
